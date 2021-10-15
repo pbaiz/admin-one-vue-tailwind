@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  admin_one_vue_tailwind:
+    container_name: admin_one_vue_tailwind
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    image: admin_one_vue_tailwind_image:latest
+    build:
+      context: ./
+    environment:
+      TODO: "TODO"
+    env_file:
+      - ./env-develop.env
